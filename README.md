@@ -19,7 +19,7 @@ The main class Element represents the data for one element as in the file elemen
 * **period** (int)
 * **weight** (double) 
 
-The class should also has: 
+The class also has: 
 * a constructor with six arguments for initialising the six fields
 * an instance method toString() which returns a string in the same format as a row in the CSV file. For example, in the case of Oxygen, the result should be:
 ```
