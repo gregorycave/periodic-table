@@ -51,18 +51,7 @@ The method reads the data from file elements.csv into a list using method readEl
 * sort the elements in that list by number in increasing order and print the first 20 elements of that list; and then
 * perform another sorting of the list but this time order elements by their groups in increasing order. Elements in the same group are sorted by their number.
 
-Sorting is performed using method Collections.sort
-(https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-)
-with appropriate implementations of interfaces Comparable<Element> and or Comparator<Element>.
-
-## Part C
-
-In the class Element, there is a method:
-```
-public static Map<Integer, Set<Element>> elementsByGroup(List<Element> elements)
-```
-
-Given a list of Element objects, this method returns a map which associates each group with the set of elements in that group. The map is sorted according to the natural ordering of its keys. Each of the sets of chemical elements are sorted by element numbers. 
+Sorting is performed using method Collections.sort (https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-) with appropriate implementations of interfaces Comparable<Element> and or Comparator<Element>.
 
 ## Part D
 
@@ -71,11 +60,13 @@ In the class Element, there is a method:
 public static Map<Integer, Set<Element>> elementsByGroup(List<Element> elements)
 ```
 
+Given a list of Element objects, this method returns a map which associates each group with the set of elements in that group. The map is sorted according to the natural ordering of its keys. Each of the sets of chemical elements are sorted by element numbers. 
+
 In the class Element, there is a method:
 ```
 public static void partD()
 ```
-This method reads the element data from file elements.csv into a list using method readElements(). It should invoke method elementsByGroup with that list. This method invocation returns a map. For each group that occurs as a key in that map, the program should display:
+This method reads the element data from file elements.csv into a list using method readElements(). It invokes method elementsByGroup with that list. This method invocation returns a map. For each group that occurs as a key in that map, the program will display:
 * The name of the group
 * The first three elements of the set associated with the group in the map.
 
